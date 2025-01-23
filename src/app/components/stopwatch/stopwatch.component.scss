@@ -26,4 +26,16 @@
         padding: 1.5rem;
         border-radius: 0.5rem;
     }
+
+    .button-play-pause {
+        .ripple {
+            background-position: center;
+            transition: background 0.9s;
+        }
+
+        .ripple:hover {
+            background-size: 100%;
+            transition: background 0s;
+        }
+    }
 }
