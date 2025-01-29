@@ -1,0 +1,94 @@
+@use "../../../variables.scss" as s;
+
+:host {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 75%;
+}
+
+.container {
+    
+    & .toolbar .head {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 16px;
+    }
+
+    & .toolbar {
+        padding: 16px;
+        background: s.$bg;
+
+        & .head {
+            & .color {
+                background-color: s.$bg;
+                color: s.$color;
+
+                & input {
+                    cursor: pointer;
+                    border: none;
+                    padding: 0;
+                }
+            }
+        }
+
+        & .btn-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+
+            & button {
+                width: 40px;
+                height: 32px;
+                background-color: s.$bg-two;
+                border: none;
+                border-radius: 4px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 4px;
+                cursor: pointer;
+            }
+
+            & button:hover {
+                background-color: s.$bg;
+            }
+        }
+    }
+
+    & .text {
+        display: flex;
+        gap: 16px;
+
+        & textarea {
+            width: 100%;
+            height: 80%;
+            background-color: s.$bg-two;
+            border-radius: 10px;
+    
+            display: flex;
+            border-color: none;
+            padding: 8px;
+    
+            text-align: start;
+            justify-content: left;
+            align-items: flex-start;
+        }
+    }
+
+}
+
+select {
+    background-color: s.$bg;
+    color: s.$color;
+    border: 1px solid s.$color;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input {
+    background-color: s.$bg;
+    color: s.$color;
+    border: none;
+}
